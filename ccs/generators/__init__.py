@@ -1,6 +1,6 @@
-from .configure_container import ConfigContainerGenerator
+from .configure_container import ContainerConfigGenerator
 
 
 __all__ = [
-    "ConfigContainerGenerator",
+    "ContainerConfigGenerator"
 ]
