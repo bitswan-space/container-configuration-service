@@ -11,7 +11,6 @@ class ContainerConfigGenerator(bspump.Generator):
     def __init__(self, app, pipeline, id=None, config=None):
         super().__init__(app, pipeline, id, config)
         self.portainer_url = self.Config["portainer_url"]
-        print(self.portainer_url)
         self.portainer_access_token = os.environ.get("PORTAINER_ACCESS_TOKEN")
         self.next_public_portainer_access_token = os.environ.get("NEXT_PUBLIC_PORTAINER_ACCESS_TOKEN")
         self.configured_contianers = set()
